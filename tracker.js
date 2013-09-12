@@ -7,6 +7,14 @@
 // @updateURL  https://raw.github.com/Letfarm/JIRA-time-tracker/master/tracker.js
 // ==/UserScript==
 
+/*
+following styles should be attached to the buttons:
+
+background: linear-gradient(to bottom,#f88 0,#f20000 100%);
+color: white;
+text-shadow: 0 1px 0 #800;
+*/
+
 function workLog($) {
 	this.issue = null;
 	this.url = '';
