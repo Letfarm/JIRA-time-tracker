@@ -5,6 +5,18 @@ Letfarms JIRA time tracking
 
 A script file used for adding time tracking buttons to the JIRA interface.
 
-To use this in Chrome, install Tampermonkey, add a new 'user script', input https://raw.github.com/Letfarm/JIRA-time-tracker/master/tracker.js as 'Update URL'. This will allow Tampermonkey to update the script when new versions are committed.
+To use this in Chrome, install Tampermonkey, add a new 'user script', copy the following into the editor, and save:
+// ==UserScript==
+// @name       JIRA time tracker
+// @version    0.1
+// @description  Adds time tracking buttons to the JIRA interface
+// @match      https://letfarm.atlassian.net/*
+// @downloadURL  https://raw.github.com/Letfarm/JIRA-time-tracker/master/tracker.js
+// @updateURL  https://raw.github.com/Letfarm/JIRA-time-tracker/master/tracker.js
+// ==/UserScript==
 
-In FireFox, GreaseMonkey should do the trick, though this hasn't been tested in GreaseMonkey
+Then go to TamperMonkeys dashbord, and trigger an update of the script 'JIRA time tracker'. Version should now change from 0.1 to whatever the latest version is, and your script should be up and running.
+
+In FireFox, GreaseMonkey should do the trick, though this hasn't been tested in GreaseMonkey.
+
+Now you should be able to see a new 'Start tracking' button on the issue pages. If the button is not there, try to refresh the screen (this will hopefully be fixed in a later version)
