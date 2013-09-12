@@ -3,6 +3,8 @@
 // @version    1
 // @description  Adds time tracking buttons to the JIRA interface
 // @match      https://letfarm.atlassian.net/*
+// @downloadURL  https://raw.github.com/Letfarm/JIRA-time-tracker/master/tracker.js
+// @updateURL  https://raw.github.com/Letfarm/JIRA-time-tracker/master/tracker.js
 // ==/UserScript==
 
 jQuery(function($){
